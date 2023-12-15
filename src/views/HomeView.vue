@@ -16,7 +16,7 @@
           @click="pauseTimer"
         ></v-btn>
         <v-btn variant="text" icon="mdi-skip-next" :disabled="currentItem.length === 0"
-        @click="finishTimer"
+      @click="finishTimer"
         ></v-btn>
       </v-col>
     </v-row>

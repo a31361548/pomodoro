@@ -56,6 +56,17 @@
     </v-row>
 
   </v-container>
+  <v-footer
+  class="bg-indigo-lighten-1 text-center d-flex flex-column"
+  id="footer"
+>
+
+  <v-divider></v-divider>
+
+  <div>
+    {{ new Date().getFullYear() }} — <strong>Vuetify</strong>
+  </div>
+</v-footer>
 </template>
 
 <script setup>
@@ -148,4 +159,9 @@ const currentTime = computed(() => {
 </script>
 
 <style>
+#footer{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
 </style>
